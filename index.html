@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Answer Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="index_files/bootstrap.css" rel="stylesheet">
+    <link href="index_files/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+      .container li {
+        font-size: 1.4em;
+        margin: 20px;
+        margin-bottom: 28px;
+      }
+      .ans {
+        margin-top: 12px;
+      }
+      .fix {
+        color: #fff;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>  
+
+    <div class="container">
+
+      <h1>19 типов задач</h1>
+      <ol>
+        <li>
+             Вычислить толщину слоя кадмия, ослабляющего поток тепловых нейтронов в <input id="wkn_1" class="span1" type="text"> раз.
+             Сечение поглощения тепловых нейтронов на кадмии составляет 2540 барн.
+             <div class="ans input-append">
+             <span id="p1" class="input-medium uneditable-input">click>></span>
+               <button id="p1btn" class="btn" type="button">Посчитать</button>
+             </div>
+
+        </li>
+
+        <li>
+          Вычислить толщину защиты из 
+          <select id="sbst_2" class="span2">
+            <option>воды</option>
+            <option>алюминия</option>
+            <option>свинца</option>
+          </select>, необходимую для ослабления интенсивности гамма - излучения с энергией <input id="enrg_2" class="span1" type="text"> МэВ в <input id="wkn_2" class="span1" type="text"> раз. Использовать геометрию узкого пучка.
+          <div class="ans input-append">
+             <span id="p2" class="input-medium uneditable-input">click>></span>
+               <button id="p2btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li><span class="fix">^</span>
+          <select id="particle_3" class="span2">
+            <option>Протоны</option>
+            <option>Дейтроны</option>
+            <option>Тритоны</option>
+          </select> с энергией <input id="enrg_3" class="span1" type="text"> МэВ падают на 
+          <select id="sbst_3" class="span2">
+              <option>алюминиевую</option>
+              <option>кремниевую</option>
+              <option>титановую</option>
+              <option>железную</option>
+              <option>медную</option>
+              <option>серебряную</option>
+              <option>вольфрамовую</option>
+              <option>золотую</option>
+              <option>свинцовую</option>
+            </select> пластину толщиной <input id="width_3" class="input-mini" type="text"> см. Вычислить энергию частиц на выходе из пластины.
+          <div class="ans input-append">
+             <span id="p3" class="input-medium uneditable-input">click>></span>
+               <button id="p3btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>
+          Определить среднее число пар ионов на пути <input id="race_4" class="input-mini" type="text"> см при прохождении <select id="particle_4" class="input-medium">
+            <option>протонов</option>
+            <option>дейтронов</option>
+            <option>тритонов</option>
+          </select> с энергией <input id="enrg_4" class="input-mini" type="text"> МэВ через воздух. На образование одной пары ионов в воздухе необходимо 35 эв.
+          <div class="ans input-append">
+             <span id="p4" class="input-medium uneditable-input">click>></span>
+               <button id="p4btn" class="btn" type="button">Посчитать</button>
+        </div>
+        </li>
+
+        <li>Вычислить активность изотопа <select id="isotope_5" class="input-small">
+                                            <option><sup>7</sup>Be</option>
+                                            <option><sup>8</sup>Be</option>
+                                            <option><sup>12</sup>B</option>
+                                            <option><sup>11</sup>C</option>
+                                            <option><sup>14</sup>C</option>
+                                            <option><sup>13</sup>N</option>
+                                            <option><sup>22</sup>Ne</option>
+                                            <option><sup>28</sup>Al</option>
+                                            <option><sup>27</sup>Si</option>
+                                            <option><sup>32</sup>P</option>
+                                            <option><sup>36</sup>Cl</option>
+                                            <option><sup>40</sup>K</option>
+                                            <option><sup>50</sup>V</option>
+                                            <option><sup>60</sup>Co</option>
+                                            <option><sup>87</sup>Rb</option>
+                                            <option><sup>90</sup>Sr</option>
+                                            <option><sup>90</sup>Y</option>
+                                            <option><sup>104</sup>Rh</option>
+                                            <option><sup>108</sup>Ag</option>
+                                            <option><sup>115</sup>In</option>
+                                            <option><sup>128</sup>I</option>
+                                            <option><sup>137</sup>Cs</option>
+                                            <option><sup>138</sup>La</option>
+                                            <option><sup>148</sup>Sm</option>
+                                            <option><sup>176</sup>Lu</option>
+                                            <option><sup>198</sup>Au</option>
+                                            <option><sup>203</sup>Hg</option>
+                                            <option><sup>204</sup>Tl</option>
+                                            <option><sup>210</sup>Pb</option>
+                                            <option><sup>210</sup>Po</option>
+                                            <option><sup>226</sup>Ra</option>
+                                            <option><sup>232</sup>Th</option>
+                                            <option><sup>233</sup>U</option>
+                                            <option><sup>238</sup>U</option>
+                                            <option><sup>238</sup>Pu</option>
+                                            <option><sup>239</sup>Pu</option>
+                                            </select>
+          в образце массой <input id="mass_5" class="input-mini" type="text"> мкг.
+        <div class="ans input-append">
+             <span id="p5" class="input-medium uneditable-input">click>></span>
+               <button id="p5btn" class="btn" type="button">Посчитать</button>
+        </div>
+        </li>
+
+        <li>Мощность дозы гамма - излучения с энергией <input id="enrg_6" class="input-mini" type="text"> МэВ составляет 5 рентген в час. Вычислить толщину защиты из <select id="sbst_6" class="span2">
+            <option>воды</option>
+            <option>алюминия</option>
+            <option>свинца</option>
+          </select>, необходимую для обеспечения безопасной работы. Максимальная допустимая доза составляет 0.05 рентген за 6 часов.
+          <div class="ans input-append">
+             <span id="p6" class="input-medium uneditable-input">click>></span>
+               <button id="p6btn" class="btn" type="button">Посчитать</button>
+        </div>
+        </li> 
+
+        <li>Мощность дозы гамма - излучения на расстоянии <input id="dnstc_7" class="input-mini" type="text"> см от точечного источника составляет <input id="dose_7" class="input-mini" type="text"> рентген/мин. Определить расстояние от источника, на котором можно находиться без защиты в течение рабочего дня (6 часов). Максимальная допустимая доза: 0.05 рентген за 6 часов.
+        <div class="ans input-append">
+             <span id="p7" class="input-medium uneditable-input">click>></span>
+               <button id="p7btn" class="btn" type="button">Посчитать</button>
+        </div>
+        </li>
+
+        <li>Индивидуальная доза облучения в результате воздействия гамма - источника с энергией <input id="enrg_8" class="span1" type="text"> МэВ в течение дня составляет 5 грей. Сколько фотонов гамма - излучения попало в организм человека массой 75 кг. Потери энергии фотона в тканях организма составляют 40%.
+        <div class="ans input-append">
+             <span id="p8" class="input-large uneditable-input">click>></span>
+               <button id="p8btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>
+        Определить мощность поглощенной дозы при работе с источником гамма - излучения с энергией <input id="enrg_9" class="span1" type="text"> МэВ и активностью 2е-4 кюри. Масса человека 70 кг. Потери энергии фотона в тканях организма составляют <input id="enrgLoss_9" class="input-mini" type="text">%
+        <div class="ans input-append">
+             <span id="p9" class="input-medium uneditable-input">click>></span>
+               <button id="p9btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>
+          Вычислить толщину защиты из графита для полного поглощения бета - частиц радиоактивного источника 
+          <select id="source_10" class="input-small">
+            <option><sup>28</sup>Al</option>
+            <option><sup>32</sup>P</option>
+            <option><sup>52</sup>V</option>
+            <option><sup>108</sup>Ag</option>
+            <option><sup>128</sup>I</option>
+            <option><sup>198</sup>Au</option>
+            <option><sup>204</sup>Tl</option>
+            </select>.
+            <div class="ans input-append">
+             <span id="p10" class="input-medium uneditable-input">click>></span>
+               <button id="p10btn" class="btn" type="button">Посчитать</button>
+             </div>
+
+          </li>
+
+        <li>Вычислить длину эффективного пробега электронов с энергией <input id="enrg_11" class="span1" type="text"> МэВ в 
+            <select id="sbst_11" class="input-small">
+              <option>Al</option>
+              <option>Si</option>
+              <option>Ti</option>
+              <option>Fe</option>
+              <option>Cu</option>
+              <option>Ag</option>
+              <option>W</option>
+              <option>Au</option>
+              <option>Pb</option>
+            </select>.
+            <div class="ans input-append">
+             <span id="p11" class="input-medium uneditable-input">click>></span>
+               <button id="p11btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>Вычислить удельные радиационные потери энергии на излучение электрона с энергией 
+          <input id="enrg_12" class="span1" type="text"> МэВ в 
+          <select id="sbst_12" class="input-small">
+              <option><sup>12</sup>C</option>
+              <option><sup>27</sup>Al</option>
+              <option><sup>28</sup>Si</option>
+              <option><sup>48</sup>Ti</option>
+              <option><sup>56</sup>Fe</option>
+              <option><sup>63</sup>Cu</option>
+              </select>.
+            <div class="ans input-append">
+             <span id="p12" class="input-medium uneditable-input">click>></span>
+               <button id="p12btn" class="btn" type="button">Посчитать</button>
+             </div>
+            </li>
+
+        <li>
+          Электроны с энергией <input id="enrg_13" class="span1" type="text"> МэВ падают на пластину толщиной <input id="width_13" class="span1" type="text"> см из 
+          <select id="sbst_13" class="input-small">
+            <option><sup>12</sup>C</option>
+            <option><sup>27</sup>Al</option>
+            <option><sup>28</sup>Si</option>
+            <option><sup>48</sup>Ti</option>
+            <option><sup>56</sup>Fe</option>
+            <option><sup>63</sup>Cu</option>
+            </select>. Вычислить энергию электронов на выходе из пластины.
+          <div class="ans input-append">
+             <span id="p13" class="input-medium uneditable-input">click>></span>
+               <button id="p13btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>Вычислить удельные ионизационные потери энергии электрона с энергией 
+          <input id="enrg_14" class="span1" type="text"> МэВ в 
+          <select id="sbst_14" class="input-small">
+            <option><sup>27</sup>Al</option>
+            <option><sup>28</sup>Si</option>
+            <option><sup>48</sup>Ti</option>
+            <option><sup>56</sup>Fe</option>
+            <option><sup>63</sup>Cu</option>
+            <option><sup>107</sup>Ag</option>
+            <option><sup>184</sup>W</option>
+            <option><sup>197</sup>Au</option>
+            <option><sup>208</sup>Pb</option>
+            </select>.
+            <div class="ans input-append">
+             <span id="p14" class="input-medium uneditable-input">click>></span>
+               <button id="p14btn" class="btn" type="button">Посчитать</button>
+             </div>
+          </li>
+
+        <li>Вычислить толщину защиты из 
+          <select id="sbst_15" class="input-medium">
+          <option>алюминия</option>
+          <option>кремния</option>
+          <option>титана</option>
+          <option>железа</option>
+          <option>меди</option>
+          <option>серебра</option>
+          <option>вольфрама</option>
+          <option>золота</option>
+          <option>свинца</option>
+            </select> от электронов, имеющих в воздухе пробег <input id="race_15" class="input-mini" type="text"> м.
+             <div class="ans input-append">
+             <span id="p15" class="input-medium uneditable-input">click>></span>
+               <button id="p15btn" class="btn" type="button">Посчитать</button>
+             </div>
+          </li>
+
+        <li>
+          Вычислить энергию переданную ядру <select id="sbst_16" class="input-small"><option><sup>27</sup>Al</option>
+                                                <option><sup>28</sup>Si</option>
+                                                <option><sup>48</sup>Ti</option>
+                                                <option><sup>56</sup>Fe</option>
+                                                <option><sup>63</sup>Cu</option>
+                                                <option><sup>107</sup>Ag</option>
+                                                <option><sup>184</sup>W</option>
+                                                <option><sup>197</sup>Au</option>
+                                                <option><sup>208</sup>Pb</option>
+            </select> при столкновении с нейтроном с энергией <input id="enrg_16" class="input-mini" type="text"> МэВ, если угол рассеяния ядра относительно направления налетающего нейтрона составляет <input id="deg_16" class="input-mini" type="text">°.
+            <div class="ans input-append">
+             <span id="p16" class="input-medium uneditable-input">click>></span>
+               <button id="p16btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>Вычислить плотность потока нейтронов от точечного источника нейтронов с энергией <input id="enrg_17" class="input-mini" type="text"> МэВ и интенсивностью 10<sup>7</sup> частиц/сек на расстоянии <input id="dstn_17" class="input-mini" type="text"> см в 
+          <select id="sbst_17" class="input-medium">
+            <option>полиэтилене</option>
+            <option>плексигласе</option>
+            <option>карбиде бора</option>
+            <option>графите</option>
+            <option>алюминии</option>
+            <option>железе</option>
+            <option>свинце</option>
+            </select>.
+          <div class="ans input-append">
+             <span id="p17" class="input-medium uneditable-input">click>></span>
+               <button id="p17btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>Вычислить плотность потока гамма - квантов от точечного источника гамма - квантов с энергией <input id="enrg_18" class="input-mini" type="text"> МэВ и интенсивностью 1е4 фотон/сек на расстоянии <input id="dstn_18" class="input-mini" type="text"> см в 
+          <select id="sbst_18" class="input-medium">
+              <option>воде</option>
+              <option>алюминии</option>
+              <option>свинце</option>
+          </select>.
+        <div class="ans input-append">
+             <span id="p18" class="input-large uneditable-input">click>></span>
+               <button id="p18btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+        <li>
+          Вычислить удельные ионизационные потери энергии <select id="particle_19" class="input-medium">
+            <option>протонов</option>
+            <option>дейтронов</option>
+            <option>тритонов</option>
+          </select> с энергией <input id="enrg_19" class="input-mini" type="text"> МэВ в 
+          <select id="sbst_19" class="input-small">
+            <option><sup>27</sup>Al</option>
+            <option><sup>28</sup>Si</option>
+            <option><sup>48</sup>Ti</option>
+            <option><sup>56</sup>Fe</option>
+            <option><sup>63</sup>Cu</option>
+            <option><sup>107</sup>Ag</option>
+            <option><sup>184</sup>W</option>
+            <option><sup>197</sup>Au</option>
+            <option><sup>208</sup>Pb</option>
+            </select>.
+          <div class="ans input-append">
+             <span id="p19" class="input-medium uneditable-input">click>></span>
+               <button id="p19btn" class="btn" type="button">Посчитать</button>
+             </div>
+        </li>
+
+
+
+      </ol>
+
+    </div> <!-- /container -->
+
+    <div class="footer">
+        <div class="container">
+          <p class="pull-right">
+            Thanks <a href="http://nuclphys.sinp.msu.ru/radiation/problems/">PF</a> and hbgs, 2012
+          </p>
+        </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./index_files/jquery.js"></script>
+    <script src="./index_files/calc.min.js"></script>
+</html>
